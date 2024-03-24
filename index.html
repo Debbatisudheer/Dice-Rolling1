@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dice Rolling Simulation</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Welcome to the Dice Rolling Simulator!</h1>
+<div class="dice-container">
+  <div class="dice" id="dice1">Click to roll</div>
+  <div class="dice" id="dice2">Click to roll</div>
+</div>
+<form id="diceForm">
+  <label for="num_sides">Number of sides for each die:</label>
+  <input type="number" id="num_sides" name="num_sides" min="2" value="6">
+  <button type="button" id="playButton">Roll Dice</button>
+</form>
+<div class="result-container" id="resultContainer">
+  <h2>Result</h2>
+  <p>Current Player: <span id="currentPlayer"></span></p>
+  <p>Number of dice rolled: 2</p>
+  <p>Number of sides per die: <span id="sidesPerDie"></span></p>
+  <p>Total: <span id="total"></span></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
